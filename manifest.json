@@ -1,0 +1,47 @@
+{
+    "manifest_version": 3,
+    "author": "HewstonFox",
+    "name": "__MSG_appName__",
+    "homepage_url": "https://github.com/HewstonFox/atlas-festival-helper",
+    "description": "__MSG_appDescription__",
+    "version": "2025.0",
+    "default_locale": "uk",
+    "icons": {
+        "32": "favicon.png"
+    },
+    "action": {
+        "default_popup": "popup/index.html",
+        "default_icon": "favicon.png",
+        "default_title": "__MSG_appName__"
+    },
+    "options_page": "options/index.html",
+    "content_scripts": [
+        {
+            "matches": ["*://atlasfestival.com/*"],
+            "js": ["shared/core/browser-api.js", "shared/core/i18n.js", "scripts/general/script.js"],
+            "run_at": "document_idle",
+            "world": "ISOLATED"
+        },
+        {
+            "matches": ["*://atlasfestival.com/schedule/*"],
+            "js": ["shared/core/browser-api.js", "shared/core/i18n.js", "shared/components/components.js", "scripts/schedule/script.js"],
+            "css": ["shared/components/components.css", "scripts/schedule/style.css"],
+            "run_at": "document_idle",
+            "world": "ISOLATED"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["_locales/*/messages.json"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "default-src 'self'"
+    },
+    "incognito": "not_allowed",
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}

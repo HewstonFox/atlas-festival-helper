@@ -1,0 +1,304 @@
+/**
+ * Shared Component Styles for Atlas Festival Helper
+ * Contains styles for ButtonComponent and GenericDropdown
+ */
+
+/* Generic Dropdown Component Styles */
+.generic-dropdown {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+    min-width: 150px;
+}
+
+.generic-dropdown:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.generic-dropdown.open {
+    border-color: #ff6b6b;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.generic-dropdown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.generic-dropdown-text {
+    flex: 1;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.generic-dropdown-arrow {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.generic-dropdown.open .generic-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.generic-dropdown-content {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 2px solid #ff6b6b;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    min-width: 100%;
+    width: max-content;
+}
+
+.generic-dropdown.open .generic-dropdown-content {
+    display: block;
+}
+
+.generic-dropdown-begin-content {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.generic-dropdown-options {
+    padding: 8px 0;
+}
+
+.generic-dropdown-option {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    min-width: 100%;
+}
+
+.generic-dropdown-option:hover {
+    background: rgba(102, 126, 234, 0.1);
+}
+
+.generic-dropdown-option.selected {
+    background: rgba(255, 107, 107, 0.1);
+    color: #ff6b6b;
+    border-left: 3px solid #ff6b6b;
+}
+
+.generic-dropdown-option.selected .generic-dropdown-label {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+.generic-dropdown-option.selected .generic-dropdown-checkbox {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.generic-dropdown-option input[type="checkbox"] {
+    display: none;
+}
+
+.generic-dropdown-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.generic-dropdown-option input[type="checkbox"]:checked + .generic-dropdown-checkbox {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.generic-dropdown-option input[type="checkbox"]:checked + .generic-dropdown-checkbox::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.generic-dropdown-label {
+    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+/* Generic Button Component Styles */
+.atlas-btn {
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.atlas-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.atlas-btn__icon {
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Filter Button Styles */
+.atlas-btn--filter {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.atlas-btn--filter:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.atlas-btn--filter.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.atlas-btn--filter.active:hover {
+    background: #ff5252;
+    border-color: #ff5252;
+    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.5);
+}
+
+.atlas-btn__icon--filter {
+    color: inherit;
+}
+
+/* Primary Button Styles */
+.atlas-btn--primary {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    border-color: #ff6b6b;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.atlas-btn--primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.atlas-btn--primary:hover {
+    background: linear-gradient(135deg, #ff5252, #ff7676);
+    border-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+}
+
+.atlas-btn--primary:hover::before {
+    left: 100%;
+}
+
+.atlas-btn--primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+}
+
+.atlas-btn__icon--primary {
+    color: white;
+}
+
+/* Secondary Button Styles */
+.atlas-btn--secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.atlas-btn--secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+.atlas-btn__icon--secondary {
+    color: inherit;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .atlas-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .atlas-btn--primary {
+        padding: 10px 16px;
+    }
+    
+    .atlas-btn__icon {
+        font-size: 14px;
+    }
+    
+    .atlas-btn--filter:hover,
+    .atlas-btn--primary:hover,
+    .atlas-btn--secondary:hover {
+        transform: none;
+    }
+    
+    .generic-dropdown {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .generic-dropdown-content {
+        max-height: 250px;
+    }
+} 

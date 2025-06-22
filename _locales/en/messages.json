@@ -1,0 +1,226 @@
+{
+    "appName": {
+        "message": "Atlas Festival Helper",
+        "description": "The name of the extension"
+    },
+    "appDescription": {
+        "message": "Helpful utils for next Atlas Festival visitors",
+        "description": "The description of the extension"
+    },
+    "popupTitle": {
+        "message": "🎵 Atlas Festival Helper",
+        "description": "Title in the popup"
+    },
+    "popupSubtitle": {
+        "message": "Your companion for the Atlas Festival experience",
+        "description": "Subtitle in the popup"
+    },
+    "quickActions": {
+        "message": "Quick Actions",
+        "description": "Quick actions section title"
+    },
+    "openSchedule": {
+        "message": "Open Atlas Schedule",
+        "description": "Button to open Atlas schedule"
+    },
+    "extensionSettings": {
+        "message": "Extension Settings",
+        "description": "Button to open extension settings"
+    },
+    "madeWithLove": {
+        "message": "Made with ❤️ for the Atlas Festival community",
+        "description": "Footer text about being made with love"
+    },
+    "version": {
+        "message": "Version 2025.0",
+        "description": "Version text"
+    },
+    "settingsTitle": {
+        "message": "🎵 Atlas Festival Helper",
+        "description": "Title in the options page"
+    },
+    "settingsSubtitle": {
+        "message": "Customize your festival experience",
+        "description": "Subtitle in the options page"
+    },
+    "general": {
+        "message": "General",
+        "description": "General section title"
+    },
+    "scheduleEnhancement": {
+        "message": "Schedule Enhancement",
+        "description": "Schedule enhancement section title"
+    },
+    "enableScheduleHelper": {
+        "message": "Enable Schedule Helper",
+        "description": "Setting label for schedule helper"
+    },
+    "enableScheduleHelperDesc": {
+        "message": "Automatically enhance the Atlas Festival schedule page with additional features",
+        "description": "Description for schedule helper setting"
+    },
+    "eventFiltering": {
+        "message": "Event Filtering",
+        "description": "Setting label for event filtering"
+    },
+    "eventFilteringDesc": {
+        "message": "Enable advanced filtering options for events",
+        "description": "Description for event filtering setting"
+    },
+    "dataManagement": {
+        "message": "Data Management",
+        "description": "Data management section title"
+    },
+    "exportSettings": {
+        "message": "Export Settings",
+        "description": "Setting label for export settings"
+    },
+    "exportSettingsDesc": {
+        "message": "Download your current settings as a backup file",
+        "description": "Description for export settings"
+    },
+    "export": {
+        "message": "Export",
+        "description": "Export button text"
+    },
+    "resetToDefault": {
+        "message": "Reset to Default",
+        "description": "Setting label for reset to default"
+    },
+    "resetToDefaultDesc": {
+        "message": "Restore all settings to their default values",
+        "description": "Description for reset to default"
+    },
+    "reset": {
+        "message": "Reset",
+        "description": "Reset button text"
+    },
+    "createdBy": {
+        "message": "Created by HewstonFox",
+        "description": "Created by text"
+    },
+    "settingUpdatedSuccess": {
+        "message": "Setting updated successfully",
+        "description": "Success message for setting update"
+    },
+    "errorUpdatingSetting": {
+        "message": "Error updating setting",
+        "description": "Error message for setting update"
+    },
+    "settingsExportedSuccess": {
+        "message": "Settings exported successfully",
+        "description": "Success message for settings export"
+    },
+    "errorExportingSettings": {
+        "message": "Error exporting settings",
+        "description": "Error message for settings export"
+    },
+    "resetConfirmMessage": {
+        "message": "Are you sure you want to reset all settings to their default values? This action cannot be undone.",
+        "description": "Confirmation message for reset settings"
+    },
+    "settingsResetSuccess": {
+        "message": "Settings reset to default values",
+        "description": "Success message for settings reset"
+    },
+    "errorResettingSettings": {
+        "message": "Error resetting settings",
+        "description": "Error message for settings reset"
+    },
+    "addToFavorites": {
+        "message": "Add to favorites",
+        "description": "Tooltip for add to favorites button"
+    },
+    "removeFromFavorites": {
+        "message": "Remove from favorites",
+        "description": "Tooltip for remove from favorites button"
+    },
+    "filterOptions": {
+        "message": "Filter Options",
+        "description": "Filter options section title"
+    },
+    "stageFilter": {
+        "message": "Stage Filter:",
+        "description": "Stage filter label"
+    },
+    "schedule": {
+        "message": "Schedule",
+        "description": "Schedule section title"
+    },
+    "conflictTimeout": {
+        "message": "Conflict Timeout:",
+        "description": "Conflict timeout label"
+    },
+    "buildSchedule": {
+        "message": "Build Schedule",
+        "description": "Build schedule button text"
+    },
+    "hideSchedule": {
+        "message": "Hide Schedule",
+        "description": "Hide schedule button text"
+    },
+    "showFavoritesOnly": {
+        "message": "Show Favorites Only",
+        "description": "Show favorites only filter button"
+    },
+    "showAllArtists": {
+        "message": "Show All Artists",
+        "description": "Show all artists filter button"
+    },
+    "selectAll": {
+        "message": "Select All",
+        "description": "Select all button text"
+    },
+    "allStages": {
+        "message": "All Stages",
+        "description": "All stages placeholder"
+    },
+    "selectTimeout": {
+        "message": "Select timeout",
+        "description": "Select timeout placeholder"
+    },
+    "time": {
+        "message": "Time",
+        "description": "Time column header"
+    },
+    "artist": {
+        "message": "Artist",
+        "description": "Artist column header"
+    },
+    "stage": {
+        "message": "Stage",
+        "description": "Stage column header"
+    },
+    "noFavoritesSelected": {
+        "message": "No favorite artists selected. Please add some artists to favorites first.",
+        "description": "Alert message when no favorites are selected"
+    },
+    "noFavoritesOnPage": {
+        "message": "No favorite artists found on this page. Please navigate to a different day or add more favorites.",
+        "description": "Alert message when no favorites are found on current page"
+    },
+    "min": {
+        "message": "min",
+        "description": "Minutes abbreviation"
+    },
+    "language": {
+        "message": "Language",
+        "description": "Language setting label"
+    },
+    "languageDesc": {
+        "message": "Choose your preferred language for the extension interface",
+        "description": "Description for language setting"
+    },
+    "english": {
+        "message": "English",
+        "description": "English language option"
+    },
+    "ukrainian": {
+        "message": "Ukrainian",
+        "description": "Ukrainian language option"
+    },
+    "languageChanged": {
+        "message": "Language changed. Please reload the extension to apply changes.",
+        "description": "Message shown when language is changed"
+    }
+} 

@@ -1,0 +1,226 @@
+{
+    "appName": {
+        "message": "Atlas Festival Helper",
+        "description": "The name of the extension"
+    },
+    "appDescription": {
+        "message": "Корисні інструменти для відвідувачів Atlas Festival",
+        "description": "The description of the extension"
+    },
+    "popupTitle": {
+        "message": "🎵 Atlas Festival Helper",
+        "description": "Title in the popup"
+    },
+    "popupSubtitle": {
+        "message": "Ваш помічник для досвіду Atlas Festival",
+        "description": "Subtitle in the popup"
+    },
+    "quickActions": {
+        "message": "Швидкі дії",
+        "description": "Quick actions section title"
+    },
+    "openSchedule": {
+        "message": "Відкрити розклад Atlas",
+        "description": "Button to open Atlas schedule"
+    },
+    "extensionSettings": {
+        "message": "Налаштування розширення",
+        "description": "Button to open extension settings"
+    },
+    "madeWithLove": {
+        "message": "Створено з ❤️ для спільноти Atlas Festival",
+        "description": "Footer text about being made with love"
+    },
+    "version": {
+        "message": "Версія 2025.0",
+        "description": "Version text"
+    },
+    "settingsTitle": {
+        "message": "🎵 Atlas Festival Helper",
+        "description": "Title in the options page"
+    },
+    "settingsSubtitle": {
+        "message": "Налаштуйте свій фестивальний досвід",
+        "description": "Subtitle in the options page"
+    },
+    "general": {
+        "message": "Загальні",
+        "description": "General section title"
+    },
+    "scheduleEnhancement": {
+        "message": "Покращення розкладу",
+        "description": "Schedule enhancement section title"
+    },
+    "enableScheduleHelper": {
+        "message": "Увімкнути помічника розкладу",
+        "description": "Setting label for schedule helper"
+    },
+    "enableScheduleHelperDesc": {
+        "message": "Автоматично покращувати сторінку розкладу Atlas Festival додатковими функціями",
+        "description": "Description for schedule helper setting"
+    },
+    "eventFiltering": {
+        "message": "Фільтрація подій",
+        "description": "Setting label for event filtering"
+    },
+    "eventFilteringDesc": {
+        "message": "Увімкнути розширені опції фільтрації для подій",
+        "description": "Description for event filtering setting"
+    },
+    "dataManagement": {
+        "message": "Управління даними",
+        "description": "Data management section title"
+    },
+    "exportSettings": {
+        "message": "Експорт налаштувань",
+        "description": "Setting label for export settings"
+    },
+    "exportSettingsDesc": {
+        "message": "Завантажити поточні налаштування як резервну копію",
+        "description": "Description for export settings"
+    },
+    "export": {
+        "message": "Експорт",
+        "description": "Export button text"
+    },
+    "resetToDefault": {
+        "message": "Скинути до стандартних",
+        "description": "Setting label for reset to default"
+    },
+    "resetToDefaultDesc": {
+        "message": "Відновити всі налаштування до стандартних значень",
+        "description": "Description for reset to default"
+    },
+    "reset": {
+        "message": "Скинути",
+        "description": "Reset button text"
+    },
+    "createdBy": {
+        "message": "Створено HewstonFox",
+        "description": "Created by text"
+    },
+    "settingUpdatedSuccess": {
+        "message": "Налаштування успішно оновлено",
+        "description": "Success message for setting update"
+    },
+    "errorUpdatingSetting": {
+        "message": "Помилка оновлення налаштування",
+        "description": "Error message for setting update"
+    },
+    "settingsExportedSuccess": {
+        "message": "Налаштування успішно експортовано",
+        "description": "Success message for settings export"
+    },
+    "errorExportingSettings": {
+        "message": "Помилка експорту налаштувань",
+        "description": "Error message for settings export"
+    },
+    "resetConfirmMessage": {
+        "message": "Ви впевнені, що хочете скинути всі налаштування до стандартних значень? Цю дію неможливо скасувати.",
+        "description": "Confirmation message for reset settings"
+    },
+    "settingsResetSuccess": {
+        "message": "Налаштування скинуті до стандартних значень",
+        "description": "Success message for settings reset"
+    },
+    "errorResettingSettings": {
+        "message": "Помилка скидання налаштувань",
+        "description": "Error message for settings reset"
+    },
+    "addToFavorites": {
+        "message": "Додати до улюблених",
+        "description": "Tooltip for add to favorites button"
+    },
+    "removeFromFavorites": {
+        "message": "Видалити з улюблених",
+        "description": "Tooltip for remove from favorites button"
+    },
+    "filterOptions": {
+        "message": "Опції фільтрації",
+        "description": "Filter options section title"
+    },
+    "stageFilter": {
+        "message": "Фільтр сцен:",
+        "description": "Stage filter label"
+    },
+    "schedule": {
+        "message": "Розклад",
+        "description": "Schedule section title"
+    },
+    "conflictTimeout": {
+        "message": "Таймаут конфліктів:",
+        "description": "Conflict timeout label"
+    },
+    "buildSchedule": {
+        "message": "Створити розклад",
+        "description": "Build schedule button text"
+    },
+    "hideSchedule": {
+        "message": "Сховати розклад",
+        "description": "Hide schedule button text"
+    },
+    "showFavoritesOnly": {
+        "message": "Показати тільки улюблені",
+        "description": "Show favorites only filter button"
+    },
+    "showAllArtists": {
+        "message": "Показати всіх артистів",
+        "description": "Show all artists filter button"
+    },
+    "selectAll": {
+        "message": "Вибрати всі",
+        "description": "Select all button text"
+    },
+    "allStages": {
+        "message": "Всі сцени",
+        "description": "All stages placeholder"
+    },
+    "selectTimeout": {
+        "message": "Вибрати таймаут",
+        "description": "Select timeout placeholder"
+    },
+    "time": {
+        "message": "Час",
+        "description": "Time column header"
+    },
+    "artist": {
+        "message": "Артист",
+        "description": "Artist column header"
+    },
+    "stage": {
+        "message": "Сцена",
+        "description": "Stage column header"
+    },
+    "noFavoritesSelected": {
+        "message": "Не вибрано улюблених артистів. Будь ласка, спочатку додайте деяких артистів до улюблених.",
+        "description": "Alert message when no favorites are selected"
+    },
+    "noFavoritesOnPage": {
+        "message": "На цій сторінці не знайдено улюблених артистів. Будь ласка, перейдіть на інший день або додайте більше улюблених.",
+        "description": "Alert message when no favorites are found on current page"
+    },
+    "min": {
+        "message": "хв",
+        "description": "Minutes abbreviation"
+    },
+    "language": {
+        "message": "Мова",
+        "description": "Language setting label"
+    },
+    "languageDesc": {
+        "message": "Виберіть бажану мову для інтерфейсу розширення",
+        "description": "Description for language setting"
+    },
+    "english": {
+        "message": "Англійська",
+        "description": "English language option"
+    },
+    "ukrainian": {
+        "message": "Українська",
+        "description": "Ukrainian language option"
+    },
+    "languageChanged": {
+        "message": "Мову змінено. Будь ласка, перезавантажте розширення для застосування змін.",
+        "description": "Message shown when language is changed"
+    }
+} 
