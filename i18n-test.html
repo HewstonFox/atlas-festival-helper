@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18n Test - Atlas Festival Helper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 3px;
+        }
+        .key {
+            font-weight: bold;
+            color: #333;
+        }
+        .value {
+            color: #666;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌍 Internationalization Test</h1>
+    <p>This page tests the i18n setup for Atlas Festival Helper</p>
+
+    <div class="test-section">
+        <h2>Manifest Messages</h2>
+        <div class="test-item">
+            <span class="key">App Name:</span>
+            <span class="value" data-i18n="appName">Atlas Festival Helper</span>
+        </div>
+        <div class="test-item">
+            <span class="key">App Description:</span>
+            <span class="value" data-i18n="appDescription">Helpful utils for next Atlas Festival visitors</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Popup Messages</h2>
+        <div class="test-item">
+            <span class="key">Popup Title:</span>
+            <span class="value" data-i18n="popupTitle">🎵 Atlas Festival Helper</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Popup Subtitle:</span>
+            <span class="value" data-i18n="popupSubtitle">Your companion for the Atlas Festival experience</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Quick Actions:</span>
+            <span class="value" data-i18n="quickActions">Quick Actions</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Open Schedule:</span>
+            <span class="value" data-i18n="openSchedule">Open Atlas Schedule</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Extension Settings:</span>
+            <span class="value" data-i18n="extensionSettings">Extension Settings</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Settings Messages</h2>
+        <div class="test-item">
+            <span class="key">Settings Title:</span>
+            <span class="value" data-i18n="settingsTitle">🎵 Atlas Festival Helper</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Settings Subtitle:</span>
+            <span class="value" data-i18n="settingsSubtitle">Customize your festival experience</span>
+        </div>
+        <div class="test-item">
+            <span class="key">General:</span>
+            <span class="value" data-i18n="general">General</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Schedule Enhancement:</span>
+            <span class="value" data-i18n="scheduleEnhancement">Schedule Enhancement</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Enable Schedule Helper:</span>
+            <span class="value" data-i18n="enableScheduleHelper">Enable Schedule Helper</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Status Messages</h2>
+        <div class="test-item">
+            <span class="key">Setting Updated Success:</span>
+            <span class="value" data-i18n="settingUpdatedSuccess">Setting updated successfully</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Error Updating Setting:</span>
+            <span class="value" data-i18n="errorUpdatingSetting">Error updating setting</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Footer Messages</h2>
+        <div class="test-item">
+            <span class="key">Made with Love:</span>
+            <span class="value" data-i18n="madeWithLove">Made with ❤️ for the Atlas Festival community</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Version:</span>
+            <span class="value" data-i18n="version">Version 2025.0</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Created By:</span>
+            <span class="value" data-i18n="createdBy">Created by HewstonFox</span>
+        </div>
+    </div>
+
+    <script>
+        // Simple i18n test without Chrome extension context
+        console.log('i18n test page loaded');
+        console.log('Note: This test page will show default English text');
+        console.log('In the actual extension, these will be translated to Ukrainian');
+        console.log('The extension uses a shared i18n utility: shared/i18n.js');
+        console.log('Content scripts use: i18n.getMessageWithFallback(key, fallback)');
+        console.log('Popup/options use: i18n.initialize() for data-i18n attributes');
+    </script>
+</body>
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Festival Helper - Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 data-i18n="settingsTitle">🎵 Atlas Festival Helper</h1>
+            <p data-i18n="settingsSubtitle">Customize your festival experience</p>
+        </div>
+
+        <div class="settings-card">
+            <div class="section-title">
+                <div class="section-icon">🌐</div>
+                <span data-i18n="general">General</span>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <div class="setting-label" data-i18n="language">Language</div>
+                        <div class="setting-description" data-i18n="languageDesc">Choose your preferred language for the extension interface</div>
+                    </div>
+                    <div class="language-selector">
+                        <select id="language-select" class="language-select">
+                            <option value="en" data-i18n="english">English</option>
+                            <option value="uk" data-i18n="ukrainian">Ukrainian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-card">
+            <div class="section-title">
+                <div class="section-icon">📅</div>
+                <span data-i18n="scheduleEnhancement">Schedule Enhancement</span>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <div class="setting-label" data-i18n="enableScheduleHelper">Enable Schedule Helper</div>
+                        <div class="setting-description" data-i18n="enableScheduleHelperDesc">Automatically enhance the Atlas Festival schedule page with
+                            additional features</div>
+                    </div>
+                    <div class="toggle-switch" id="schedule-helper-toggle"></div>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <div class="setting-label" data-i18n="eventFiltering">Event Filtering</div>
+                        <div class="setting-description" data-i18n="eventFilteringDesc">Enable advanced filtering options for events</div>
+                    </div>
+                    <div class="toggle-switch" id="event-filtering-toggle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-card">
+            <div class="section-title">
+                <div class="section-icon">💾</div>
+                <span data-i18n="dataManagement">Data Management</span>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <div class="setting-label" data-i18n="exportSettings">Export Settings</div>
+                        <div class="setting-description" data-i18n="exportSettingsDesc">Download your current settings as a backup file</div>
+                    </div>
+                    <button class="button" id="export-settings" data-i18n="export">Export</button>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <div class="setting-label" data-i18n="resetToDefault">Reset to Default</div>
+                        <div class="setting-description" data-i18n="resetToDefaultDesc">Restore all settings to their default values</div>
+                    </div>
+                    <button class="button secondary" id="reset-settings" data-i18n="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="status-message" class="status-message" style="display: none;"></div>
+
+        <div class="footer">
+            <p data-i18n="madeWithLove">Made with ❤️ for the Atlas Festival community</p>
+            <p><span data-i18n="version">Version 2025.0</span> | <span data-i18n="createdBy">Created by HewstonFox</span></p>
+        </div>
+    </div>
+
+    <script src="../shared/core/browser-api.js"></script>
+    <script src="../shared/core/i18n.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Test - Atlas Festival Helper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .language-selector {
+            margin: 20px 0;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+        }
+        .message-test {
+            background: #f5f5f5;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Language Test - Atlas Festival Helper</h1>
+    
+    <div class="test-section">
+        <h2>Language Selection</h2>
+        <div class="language-selector">
+            <label for="language-select">Select Language:</label>
+            <select id="language-select">
+                <option value="uk">Українська</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Translation Test</h2>
+        <div class="message-test">
+            <strong>App Name:</strong> <span data-i18n="appName">Atlas Festival Helper</span>
+        </div>
+        <div class="message-test">
+            <strong>General:</strong> <span data-i18n="general">General</span>
+        </div>
+        <div class="message-test">
+            <strong>Language:</strong> <span data-i18n="language">Language</span>
+        </div>
+        <div class="message-test">
+            <strong>Settings Title:</strong> <span data-i18n="settingsTitle">Settings</span>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Current Language</h2>
+        <p>Current language: <span id="current-lang">Loading...</span></p>
+        <p>Page lang attribute: <span id="page-lang">Loading...</span></p>
+    </div>
+
+    <script src="shared/core/browser-api.js"></script>
+    <script src="shared/core/i18n.js"></script>
+    <script>
+        // Mock browser API for testing
+        if (typeof browserAPI === 'undefined') {
+            window.browserAPI = {
+                getStorage: async (keys) => {
+                    // Mock storage with default language
+                    return { language: 'uk' };
+                },
+                setStorage: async (items) => {
+                    console.log('Setting storage:', items);
+                    return Promise.resolve();
+                },
+                getI18nMessage: (key) => {
+                    // Mock i18n messages
+                    const messages = {
+                        appName: { uk: 'Atlas Festival Helper', en: 'Atlas Festival Helper' },
+                        general: { uk: 'Загальні', en: 'General' },
+                        language: { uk: 'Мова', en: 'Language' },
+                        settingsTitle: { uk: '🎵 Atlas Festival Helper', en: '🎵 Atlas Festival Helper' }
+                    };
+                    const currentLang = document.documentElement.lang || 'uk';
+                    return messages[key] ? messages[key][currentLang] || messages[key]['uk'] : key;
+                }
+            };
+        }
+
+        // Initialize test
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Initialize i18n
+            await i18n.init();
+            i18n.initialize();
+            
+            // Set up language selector
+            const languageSelect = document.getElementById('language-select');
+            const currentLangSpan = document.getElementById('current-lang');
+            const pageLangSpan = document.getElementById('page-lang');
+            
+            // Load current language
+            try {
+                const result = await browserAPI.getStorage('language');
+                const currentLanguage = result.language || 'uk';
+                languageSelect.value = currentLanguage;
+                currentLangSpan.textContent = currentLanguage;
+                pageLangSpan.textContent = document.documentElement.lang;
+            } catch (error) {
+                console.error('Error loading language:', error);
+            }
+            
+            // Handle language change
+            languageSelect.addEventListener('change', async (e) => {
+                const newLanguage = e.target.value;
+                document.documentElement.lang = newLanguage;
+                await i18n.switchLanguage(newLanguage);
+                currentLangSpan.textContent = newLanguage;
+                pageLangSpan.textContent = document.documentElement.lang;
+            });
+        });
+    </script>
+</body>
+</html> 

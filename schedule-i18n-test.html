@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule i18n Test - Atlas Festival Helper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .test-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 3px;
+        }
+        .key {
+            font-weight: bold;
+            color: #333;
+        }
+        .value {
+            color: #666;
+            margin-left: 10px;
+        }
+        .uk-value {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .en-value {
+            color: #cc6600;
+        }
+        .mock-chrome {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 Schedule Content Script i18n Test</h1>
+    <p>This page tests the internationalization for the schedule content script</p>
+
+    <div class="mock-chrome">
+        <strong>Mock Chrome Extension Context:</strong>
+        <p>In a real Chrome extension, these would be loaded from the _locales directory using chrome.i18n.getMessage()</p>
+    </div>
+
+    <div class="test-section">
+        <h2>Favorite Button Messages</h2>
+        <div class="test-item">
+            <span class="key">Add to Favorites:</span>
+            <span class="uk-value">Додати до улюблених</span>
+            <span class="en-value">(Add to favorites)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Remove from Favorites:</span>
+            <span class="uk-value">Видалити з улюблених</span>
+            <span class="en-value">(Remove from favorites)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Filter UI Messages</h2>
+        <div class="test-item">
+            <span class="key">Filter Options:</span>
+            <span class="uk-value">Опції фільтрації</span>
+            <span class="en-value">(Filter Options)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Stage Filter:</span>
+            <span class="uk-value">Фільтр сцен:</span>
+            <span class="en-value">(Stage Filter:)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Show Favorites Only:</span>
+            <span class="uk-value">Показати тільки улюблені</span>
+            <span class="en-value">(Show Favorites Only)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Show All Artists:</span>
+            <span class="uk-value">Показати всіх артистів</span>
+            <span class="en-value">(Show All Artists)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Select All:</span>
+            <span class="uk-value">Вибрати всі</span>
+            <span class="en-value">(Select All)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">All Stages:</span>
+            <span class="uk-value">Всі сцени</span>
+            <span class="en-value">(All Stages)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Schedule UI Messages</h2>
+        <div class="test-item">
+            <span class="key">Schedule:</span>
+            <span class="uk-value">Розклад</span>
+            <span class="en-value">(Schedule)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Conflict Timeout:</span>
+            <span class="uk-value">Таймаут конфліктів:</span>
+            <span class="en-value">(Conflict Timeout:)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Build Schedule:</span>
+            <span class="uk-value">Створити розклад</span>
+            <span class="en-value">(Build Schedule)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Hide Schedule:</span>
+            <span class="uk-value">Сховати розклад</span>
+            <span class="en-value">(Hide Schedule)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Select Timeout:</span>
+            <span class="uk-value">Вибрати таймаут</span>
+            <span class="en-value">(Select timeout)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Table Headers</h2>
+        <div class="test-item">
+            <span class="key">Time:</span>
+            <span class="uk-value">Час</span>
+            <span class="en-value">(Time)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Artist:</span>
+            <span class="uk-value">Артист</span>
+            <span class="en-value">(Artist)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">Stage:</span>
+            <span class="uk-value">Сцена</span>
+            <span class="en-value">(Stage)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Alert Messages</h2>
+        <div class="test-item">
+            <span class="key">No Favorites Selected:</span>
+            <span class="uk-value">Не вибрано улюблених артистів. Будь ласка, спочатку додайте деяких артистів до улюблених.</span>
+            <span class="en-value">(No favorite artists selected. Please add some artists to favorites first.)</span>
+        </div>
+        <div class="test-item">
+            <span class="key">No Favorites on Page:</span>
+            <span class="uk-value">На цій сторінці не знайдено улюблених артистів. Будь ласка, перейдіть на інший день або додайте більше улюблених.</span>
+            <span class="en-value">(No favorite artists found on this page. Please navigate to a different day or add more favorites.)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Time Units</h2>
+        <div class="test-item">
+            <span class="key">Minutes (min):</span>
+            <span class="uk-value">хв</span>
+            <span class="en-value">(min)</span>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Implementation Notes</h2>
+        <div class="test-item">
+            <strong>Content Script Usage:</strong>
+            <p>The schedule content script now uses the shared <code>i18n</code> utility instead of calling <code>chrome.i18n.getMessage()</code> directly.</p>
+            <p>Example: <code>i18n.getMessageWithFallback('buildSchedule', 'Build Schedule')</code></p>
+        </div>
+        <div class="test-item">
+            <strong>Shared i18n Utility:</strong>
+            <p>The extension uses a shared <code>shared/i18n.js</code> utility that provides:</p>
+            <ul>
+                <li><code>i18n.getMessage(key)</code> - Get message without fallback</li>
+                <li><code>i18n.getMessageWithFallback(key, fallback)</code> - Get message with fallback (recommended for content scripts)</li>
+                <li><code>i18n.initialize()</code> - Initialize for popup/options pages</li>
+            </ul>
+        </div>
+        <div class="test-item">
+            <strong>Fallback Strategy:</strong>
+            <p>All translations use <code>getMessageWithFallback()</code> which provides English fallback text for robustness.</p>
+        </div>
+        <div class="test-item">
+            <strong>Dynamic Content:</strong>
+            <p>Button text, tooltips, and alert messages are all internationalized and will display in Ukrainian by default.</p>
+        </div>
+    </div>
+
+    <script>
+        console.log('Schedule i18n test page loaded');
+        console.log('In the actual extension, these translations would be loaded from _locales/uk/messages.json');
+        console.log('The schedule content script uses chrome.i18n.getMessage() for all user-facing text');
+    </script>
+</body>
+</html> 

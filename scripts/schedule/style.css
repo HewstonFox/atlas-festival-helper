@@ -1,0 +1,453 @@
+/* Atlas Festival Helper - Schedule Styles */
+
+/* Favorite Button Styles */
+.favorite-btn {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #ff6b6b;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #ff6b6b;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    flex-shrink: 0;
+}
+
+.favorite-btn:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+}
+
+.favorite-btn.favorite-active {
+    background: #ff6b6b;
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+}
+
+/* Special Build Schedule Button Design */
+.atlas-btn--build-schedule {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffd700 100%);
+    border-color: #ff6b35;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    font-size: 14px;
+    box-shadow: 
+        0 6px 20px rgba(255, 107, 53, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+        0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    position: relative;
+    overflow: hidden;
+}
+
+.atlas-btn--build-schedule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.atlas-btn--build-schedule::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
+    pointer-events: none;
+}
+
+.atlas-btn--build-schedule:hover {
+    background: linear-gradient(135deg, #ff5a1f 0%, #f08500 50%, #ffcc00 100%);
+    border-color: #ff5a1f;
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(255, 107, 53, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.15) inset,
+        0 1px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+.atlas-btn--build-schedule:hover::before {
+    left: 100%;
+}
+
+.atlas-btn--build-schedule:active {
+    transform: translateY(-1px);
+    box-shadow: 
+        0 4px 15px rgba(255, 107, 53, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+        0 1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+.atlas-btn--build-schedule .atlas-btn__icon {
+    font-size: 16px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* Make schedule items relative for absolute positioning of favorite buttons */
+.schedule_item {
+    position: relative;
+}
+
+.schedule_descr {
+    position: relative;
+}
+
+/* Ensure proper layout for schedule items with favorite buttons */
+.schedule_item .schedule_img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.schedule_item .schedule_name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Filter Controls Styles */
+.atlas-filter-controls {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section:last-child {
+    margin-bottom: 0;
+}
+
+.filter-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.filter-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.stage-filter-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.stage-filter-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+/* Schedule Controls Styles */
+.schedule-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.conflict-timeout-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.conflict-timeout-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+/* Old conflict timeout dropdown styles removed - now using generic dropdown component */
+
+/* Old build-schedule-btn and schedule-icon styles removed - now using generic atlas-btn component */
+
+/* Schedule Table Styles */
+.schedule-table-container {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.schedule-table-wrapper {
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th {
+    background: #2c3e50;
+    color: white;
+    padding: 16px 12px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 2px solid #34495e;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.schedule-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tr:hover {
+    background: rgba(102, 126, 234, 0.05);
+}
+
+/* Conflict Row Styles */
+.conflict-row {
+    background: rgba(255, 107, 107, 0.1) !important;
+}
+
+.conflict-row:hover {
+    background: rgba(255, 107, 107, 0.15) !important;
+}
+
+.conflict-time {
+    color: #e74c3c !important;
+    font-weight: 600;
+}
+
+.conflict-artist {
+    color: #e74c3c !important;
+    font-weight: 600;
+}
+
+.conflict-stage {
+    color: #e74c3c !important;
+}
+
+/* Conflict Highlighting in Main Schedule */
+.conflict-highlight {
+    background-color: #ff6b6b !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    margin-right: 28px !important;
+    animation: conflictPulse 2s infinite !important;
+}
+
+/* Different colors for different conflict groups */
+.conflict-highlight-red {
+    background-color: #ff6b6b !important;
+    color: white !important;
+}
+
+.conflict-highlight-blue {
+    background-color: #4ecdc4 !important;
+    color: white !important;
+}
+
+.conflict-highlight-green {
+    background-color: #45b7d1 !important;
+    color: white !important;
+}
+
+.conflict-highlight-orange {
+    background-color: #f39c12 !important;
+    color: white !important;
+}
+
+.conflict-highlight-purple {
+    background-color: #9b59b6 !important;
+    color: white !important;
+}
+
+.conflict-highlight-pink {
+    background-color: #e91e63 !important;
+    color: white !important;
+}
+
+/* Old stage dropdown styles removed - now using generic dropdown component */
+
+.stage-dropdown-btn {
+    background: #ff6b6b;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.stage-dropdown-btn:hover {
+    background: #ff5252;
+    transform: translateY(-1px);
+}
+
+.stage-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.stage-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .atlas-filter-controls {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .filter-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    .stage-filter-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .stage-filter-label {
+        text-align: center;
+    }
+
+    .generic-dropdown {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .generic-dropdown-content {
+        max-height: 250px;
+    }
+
+    .favorite-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        margin: 0 6px;
+    }
+
+    /* Mobile Schedule Controls */
+    .schedule-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .conflict-timeout-section {
+        justify-content: center;
+    }
+
+    .schedule-table-container {
+        padding: 15px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+}
+
+.favorite-btn:active {
+    transform: scale(0.95);
+}
+
+.schedule_item {
+    transition: all 0.3s ease;
+}
+
+.schedule_item[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.schedule_block {
+    transition: all 0.3s ease;
+}
+
+.schedule_block[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.atlas-filter-controls.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+@keyframes favoriteAdded {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.favorite-btn.favorite-active {
+    animation: favoriteAdded 0.3s ease;
+}
+
+@keyframes conflictPulse {
+    0% { box-shadow: 0 0 0 0px rgba(255, 107, 107, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 107, 107, 0); }
+    100% { box-shadow: 0 0 0 0px rgba(255, 107, 107, 0); }
+}
+
+/* Component styles are now imported from shared/components/components.css */
