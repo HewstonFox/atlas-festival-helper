@@ -444,6 +444,14 @@ class GenericDropdown {
         this.triggerChange();
     }
 
+    setBeginContent(newContent) {
+        this.options.beginContent = newContent;
+        const beginContentDiv = this.element.querySelector('.generic-dropdown-begin-content');
+        if (beginContentDiv) {
+            beginContentDiv.innerHTML = newContent;
+        }
+    }
+
     destroy() {
         if (this.element && this.element.parentNode) {
             this.element.parentNode.removeChild(this.element);

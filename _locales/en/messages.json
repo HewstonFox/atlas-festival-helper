@@ -152,7 +152,7 @@
         "description": "Conflict timeout label"
     },
     "buildSchedule": {
-        "message": "Build Schedule",
+        "message": "Show Schedule",
         "description": "Build schedule button text"
     },
     "hideSchedule": {
@@ -199,6 +199,18 @@
         "message": "No favorite artists found on this page. Please navigate to a different day or add more favorites.",
         "description": "Alert message when no favorites are found on current page"
     },
+    "printExportPDF": {
+        "message": "Export PDF",
+        "description": "Button text for exporting schedule to PDF"
+    },
+    "noScheduleToPrint": {
+        "message": "No schedule to print. Please add some artists to favorites first.",
+        "description": "Message when there's no schedule to print"
+    },
+    "yourSchedule": {
+        "message": "Atlas Festival schedule for $1",
+        "description": "Title for the printed schedule with date placeholder"
+    },
     "min": {
         "message": "min",
         "description": "Minutes abbreviation"
@@ -222,5 +234,9 @@
     "languageChanged": {
         "message": "Language changed. Please reload the extension to apply changes.",
         "description": "Message shown when language is changed"
+    },
+    "conflict": {
+        "message": "CONFLICT",
+        "description": "Conflict indicator text for print layout"
     }
 } 

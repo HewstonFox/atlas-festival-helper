@@ -152,7 +152,7 @@
         "description": "Conflict timeout label"
     },
     "buildSchedule": {
-        "message": "Створити розклад",
+        "message": "Показати розклад",
         "description": "Build schedule button text"
     },
     "hideSchedule": {
@@ -196,7 +196,7 @@
         "description": "Alert message when no favorites are selected"
     },
     "noFavoritesOnPage": {
-        "message": "На цій сторінці не знайдено улюблених артистів. Будь ласка, перейдіть на інший день або додайте більше улюблених.",
+        "message": "На цій сторінці не знайдено улюблених артистів. Будь ласка, перейдіть на інший день фбо додайте більше улюблених.",
         "description": "Alert message when no favorites are found on current page"
     },
     "min": {
@@ -222,5 +222,21 @@
     "languageChanged": {
         "message": "Мову змінено. Будь ласка, перезавантажте розширення для застосування змін.",
         "description": "Message shown when language is changed"
+    },
+    "printExportPDF": {
+        "message": "Експорт PDF",
+        "description": "Button text for exporting schedule to PDF"
+    },
+    "noScheduleToPrint": {
+        "message": "Немає розкладу для друку. Будь ласка, спочатку додайте деяких артистів до улюблених.",
+        "description": "Message when there's no schedule to print"
+    },
+    "yourSchedule": {
+        "message": "Розклад Atlas Festival на $1",
+        "description": "Title for the printed schedule with date placeholder"
+    },
+    "conflict": {
+        "message": "КОНФЛІКТ",
+        "description": "Conflict indicator text for print layout"
     }
 } 
