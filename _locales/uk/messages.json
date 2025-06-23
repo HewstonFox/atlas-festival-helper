@@ -83,6 +83,34 @@
         "message": "Експорт",
         "description": "Export button text"
     },
+    "importSettings": {
+        "message": "Імпорт налаштувань",
+        "description": "Setting label for import settings"
+    },
+    "importSettingsDesc": {
+        "message": "Імпортувати налаштування з попередньо експортованого резервного файлу",
+        "description": "Description for import settings"
+    },
+    "import": {
+        "message": "Імпорт",
+        "description": "Import button text"
+    },
+    "settingsImportedSuccess": {
+        "message": "Налаштування успішно імпортовано",
+        "description": "Success message for settings import"
+    },
+    "errorImportingSettings": {
+        "message": "Помилка імпорту налаштувань",
+        "description": "Error message for settings import"
+    },
+    "invalidSettingsFile": {
+        "message": "Неправильний формат файлу налаштувань",
+        "description": "Error message for invalid settings file"
+    },
+    "importConfirmMessage": {
+        "message": "Імпорт налаштувань перезапише ваші поточні налаштування. Ви впевнені, що хочете продовжити?",
+        "description": "Confirmation message for settings import"
+    },
     "resetToDefault": {
         "message": "Скинути до стандартних",
         "description": "Setting label for reset to default"

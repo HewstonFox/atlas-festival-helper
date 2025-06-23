@@ -83,6 +83,34 @@
         "message": "Export",
         "description": "Export button text"
     },
+    "importSettings": {
+        "message": "Import Settings",
+        "description": "Setting label for import settings"
+    },
+    "importSettingsDesc": {
+        "message": "Import settings from a previously exported backup file",
+        "description": "Description for import settings"
+    },
+    "import": {
+        "message": "Import",
+        "description": "Import button text"
+    },
+    "settingsImportedSuccess": {
+        "message": "Settings imported successfully",
+        "description": "Success message for settings import"
+    },
+    "errorImportingSettings": {
+        "message": "Error importing settings",
+        "description": "Error message for settings import"
+    },
+    "invalidSettingsFile": {
+        "message": "Invalid settings file format",
+        "description": "Error message for invalid settings file"
+    },
+    "importConfirmMessage": {
+        "message": "Importing settings will overwrite your current settings. Are you sure you want to continue?",
+        "description": "Confirmation message for settings import"
+    },
     "resetToDefault": {
         "message": "Reset to Default",
         "description": "Setting label for reset to default"

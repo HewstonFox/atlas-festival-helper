@@ -173,6 +173,11 @@ body {
     font-size: 14px;
 }
 
+.import-container {
+    display: flex;
+    align-items: center;
+}
+
 .button {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -226,7 +231,19 @@ body {
 }
 
 .status-message.error {
-    background: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background: #fee;
+    color: #c53030;
+    border-color: #feb2b2;
+}
+
+/* Hide file input completely */
+#import-file {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }

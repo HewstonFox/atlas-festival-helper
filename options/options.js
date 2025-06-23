@@ -38,6 +38,10 @@ class AtlasFestivalHelperOptions {
             this.exportSettings();
         });
 
+        document.getElementById('import-settings').addEventListener('click', () => {
+            this.importSettings();
+        });
+
         document.getElementById('reset-settings').addEventListener('click', () => {
             this.resetSettings();
         });
@@ -137,6 +141,53 @@ class AtlasFestivalHelperOptions {
             console.error('Error exporting settings:', error);
             this.showStatusMessage(i18n.getMessage('errorExportingSettings'), 'error');
         }
+    }
+
+    async importSettings() {
+        const fileInput = document.getElementById('import-file');
+        
+        // Trigger file selection
+        fileInput.click();
+        
+        fileInput.onchange = async (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            try {
+                // Show confirmation dialog
+                if (!confirm(i18n.getMessage('importConfirmMessage'))) {
+                    return;
+                }
+
+                const text = await file.text();
+                const settings = JSON.parse(text);
+
+                // Validate that it's a valid settings object
+                if (typeof settings !== 'object' || settings === null) {
+                    throw new Error('Invalid settings format');
+                }
+
+                // Import the settings
+                await browserAPI.setStorage(settings);
+                
+                // Update the UI with new settings
+                this.updateUI(settings);
+                
+                this.showStatusMessage(i18n.getMessage('settingsImportedSuccess'), 'success');
+                
+                // Clear the file input
+                fileInput.value = '';
+                
+            } catch (error) {
+                console.error('Error importing settings:', error);
+                if (error.name === 'SyntaxError') {
+                    this.showStatusMessage(i18n.getMessage('invalidSettingsFile'), 'error');
+                } else {
+                    this.showStatusMessage(i18n.getMessage('errorImportingSettings'), 'error');
+                }
+                fileInput.value = '';
+            }
+        };
     }
 
     async resetSettings() {

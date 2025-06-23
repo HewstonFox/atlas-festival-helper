@@ -439,9 +439,9 @@ class AtlasScheduleHelper {
     }
 
     applyFilters() {
-        // Check if event filtering is enabled
-        if (!this.settings.eventFiltering) {
-            // Show all items if filtering is disabled
+        // Check if schedule helper is enabled
+        if (!this.settings.scheduleHelper) {
+            // Show all items if schedule helper is disabled
             const scheduleItems = document.querySelectorAll('.schedule_item');
             scheduleItems.forEach(item => {
                 item.style.display = '';

@@ -72,6 +72,17 @@
 
                 <div class="setting-item">
                     <div class="setting-info">
+                        <div class="setting-label" data-i18n="importSettings">Import Settings</div>
+                        <div class="setting-description" data-i18n="importSettingsDesc">Import settings from a previously exported backup file</div>
+                    </div>
+                    <div class="import-container">
+                        <input type="file" id="import-file" accept=".json" style="display: none; visibility: hidden;">
+                        <button class="button" id="import-settings" data-i18n="import">Import</button>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <div class="setting-info">
                         <div class="setting-label" data-i18n="resetToDefault">Reset to Default</div>
                         <div class="setting-description" data-i18n="resetToDefaultDesc">Restore all settings to their default values</div>
                     </div>
