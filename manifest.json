@@ -41,7 +41,6 @@
     },
     "incognito": "not_allowed",
     "permissions": [
-        "storage",
-        "tabs"
+        "storage"
     ]
 }

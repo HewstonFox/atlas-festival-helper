@@ -4,6 +4,14 @@ Chrome extension for Atlas Festival with schedule management and internationaliz
 
 Totally Vibe coded by Cursor ❤️
 
+## Screenshots
+
+### Updated artist list
+![Extension Popup](screenshots/schedule-extention.png)
+
+### Schedule Panel
+![Schedule Panel](screenshots/schedule-panel.png)
+
 ## Development
 
 ### Setup
